@@ -136,9 +136,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-10 ml-6">
-          <p>Status</p>
-          <div className="flex gap-2 mt-4">
+        <section className="mt-10 ml-6 md:ml-0 md:justify-center">
+          <p className="text-2xl font-bold">Status</p>
+          <div className="flex gap-2 mt-8">
             <Image
               src="/image/airplane-svgrepo-com.svg"
               alt="Airplane"
@@ -147,14 +147,14 @@ export default function Home() {
             />
             <span>{bagStatus.statusMessage}</span>
           </div>
-          <div className="mt-4">
+          <div className="mt-10 flex gap-2">
             <Image
               src="/image/exclamation-mark-round-svgrepo-com.svg"
               alt="Info"
-              width={30}
-              height={10}
+              width={40}
+              height={20}
             />
-            <span>Current Status: {bagStatus.currentStatus}</span>
+            <span className="items-center">Current Status: {bagStatus.currentStatus}</span>
           </div>
         </section>
       </div>
